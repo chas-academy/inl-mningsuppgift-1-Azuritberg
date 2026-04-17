@@ -35,7 +35,7 @@ function showContacts(contactBook, groupToShow) { // Rör ej denna kod
 
 
 
-    // Loopar igenom alla kontakter och jämför grupp
+    // Loopar igenom alla kontakter och jämför grupp..lämna in
 
     for (const contact of contactBook.contacts) {
         if (contact.group === groupToShow) {
