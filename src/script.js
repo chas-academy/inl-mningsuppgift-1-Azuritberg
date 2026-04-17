@@ -26,7 +26,7 @@ const contactBook = {
 };
   
   // Ange en grupp
-  let groupToShow;
+  let groupToShow = "familj";
   
 
 
@@ -51,6 +51,7 @@ function showContacts(contactBook, groupToShow) { // Rör ej denna kod
 
 }
 
+console.log(showContacts(contactBook, groupToShow));
 
 // Rör ej denna kod
 showContacts(contactBook, groupToShow);
