@@ -37,9 +37,16 @@ function showContacts(contactBook, groupToShow) { // Rör ej denna kod
 
     // Loopar igenom alla kontakter och jämför grupp
 
-    console.log(`Kontakter i gruppen ${groupToShow}:`); // Test till GitHub för att se om jag gör rätt i uppgiften :))
+    let result = `Kontakter i gruppen ${groupToShow}:\n`; // Skapar en sträng som kommer att innehålla resultatet
+
+    contactBook.contacts.forEach (contact => {
+        if (contact.group === groupToShow) {
+            result += `${contact.name} - ${contact.phone}\n`;
+
+        }
+    });
    
-    return  // här ska sträng med namn och tekefonnummer visas i form av string interpolation
+    return result; // här ska sträng med namn och tekefonnummer visas i form av string interpolation
 
 
 }
