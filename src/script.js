@@ -26,7 +26,7 @@ const contactBook = {
 };
   
   // Ange en grupp
-  let groupToShow = "arbete";
+  let groupToShow = "familj";
   
 
 
@@ -39,17 +39,13 @@ function showContacts(contactBook, groupToShow) { // Rör ej denna kod
 
     for (const contact of contactBook.contacts) {
         if (contact.group === groupToShow) {
-            return `Name: ${contact.name} - Phone: ${contact.phone}`;
-        }
-
+            return `Name: ${contact.name}, Telefon: ${contact.phone}`; // här ska sträng med namn och tekefonnummer visas i form av string interpolation  
+        }    
     }
-   
-    return ""; // här ska sträng med namn och tekefonnummer visas i form av string interpolation
-
-
+  
 }
 
-console.log(showContacts(contactBook, groupToShow));
+//console.log(showContacts(contactBook, groupToShow));
 
 // Rör ej denna kod
 showContacts(contactBook, groupToShow);
